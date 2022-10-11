@@ -123,6 +123,8 @@ export default class Application
             {
                 this.camera.target.x = this.world.car.chassis.object.position.x
                 this.camera.target.y = this.world.car.chassis.object.position.y
+                this.camera.worldForwardx = this.world.physics.car.worldForward.x
+                this.camera.worldForwardy = this.world.physics.car.worldForward.y
             }
         })
     }

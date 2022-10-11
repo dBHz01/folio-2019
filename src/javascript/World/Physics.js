@@ -560,6 +560,8 @@ export default class Physics
 
             this.car.vehicle.applyEngineForce(- this.car.accelerating, this.car.wheels.indexes.backLeft)
             this.car.vehicle.applyEngineForce(- this.car.accelerating, this.car.wheels.indexes.backRight)
+            this.car.vehicle.applyEngineForce(- this.car.accelerating, this.car.wheels.indexes.frontLeft)
+            this.car.vehicle.applyEngineForce(- this.car.accelerating, this.car.wheels.indexes.frontRight)
 
             if(this.car.options.controlsSteeringQuad)
             {
