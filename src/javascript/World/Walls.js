@@ -59,6 +59,11 @@ export default class Walls
                         rotation.x += (Math.random() - 0.5) * shape.randomRotation.x
                         rotation.y += (Math.random() - 0.5) * shape.randomRotation.y
                         rotation.z += (Math.random() - 0.5) * shape.randomRotation.z
+                        if (shape.rotation) {
+                            rotation.x += shape.rotation.x
+                            rotation.y += shape.rotation.y
+                            rotation.z += shape.rotation.z
+                        }
 
                         wall.coordinates.push({
                             offset,
